@@ -1,0 +1,48 @@
+
+* {
+    margin:0;
+    padding: 2rem;
+}
+
+body {
+    font-family: Times New Roman, serif;
+    background-color: #f9f9f9;
+    color: #222222;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.header {
+    background-color: #655645;
+    color: rgb(228, 223, 223);
+    padding: 30px 20px;
+}
+
+.tagline {
+    color: #cccccc;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.about-text {
+    max-width: 800rem;
+    margin: 0 auto;
+}
+
+.card {
+    display: inline-block;
+    width: 250px;
+    background-color: rgb(195, 186, 172);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+    text-align: middle ;
+}
+
+
+.footer {
+    background-color: #655645;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
