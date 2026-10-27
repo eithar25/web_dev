@@ -1,0 +1,127 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef0fd;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111827;
+}
+
+.card {
+  width: 100%;
+  max-width: 760px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px 28px;
+  box-shadow: 0 10px 30px rgba(60, 70, 140, 0.12);
+}
+
+h1 { margin: 0 0 16px; font-size: 24px; }
+
+.add-row { display: flex; gap: 12px; }
+
+#todoInput {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #e5e7f0;
+  border-radius: 10px;
+  background: #fafbff;
+  outline: none;
+}
+#todoInput:focus { border-color: #3b82f6; }
+
+.add-btn {
+  padding: 0 24px;
+  background: #3b82f6;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.tip { color: #6b7280; font-size: 14px; }
+
+.filters { display: flex; gap: 8px; }
+
+.filter {
+  padding: 8px 14px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #4b5563;
+  font-weight: bold;
+  cursor: pointer;
+}
+.filter.active {
+  background: #e0ecff;
+  border-color: #c7dcff;
+  color: #3b82f6;
+}
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 12px;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+li input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; }
+
+.text { flex: 1; font-size: 18px; cursor: pointer; }
+li.done .text { text-decoration: line-through; color: #9ca3af; }
+
+.edit-input {
+  flex: 1;
+  font-size: 18px;
+  padding: 6px 8px;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  outline: none;
+}
+
+.delete {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.delete:hover { opacity: 1; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.small-btn {
+  padding: 5px 10px;
+  margin-left: 6px;
+  background: #efefef;
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: #555;
+  cursor: pointer;
+}
